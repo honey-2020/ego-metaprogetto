@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Bale;
+  font-weight: regular;
+  src: url("inc/font/Bale/Bale Regular.otf");
+}
+
+@font-face {
+  font-family: Bale;
+  font-weight: bold;
+  src: url("inc/font/Bale/Bale Bold.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Bale', Fallback, sans-serif;
+  font-weight: 300;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-color: #7E61CB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .col-info {
+  padding: 2.5em;
+}
+
+header .col-info img {
+  width: 300px;
+  padding: 0 0 2em 0;
+}
+
+header .col-info p {
+  font-size: 20px;
+  color: white;
+  width: 70%;
+  padding: 0 0 4em 0;
+}
+
+header .col-info button {
+  padding: 15px 60px;
+  outline: none;
+  background-color: white;
+  font-size: 25px;
+  border-radius: 20px;
+}
+
+header .col-info button a {
+  color: black;
+}
+
+header .col-img img {
+  max-width: 80%;
+}
+
+@media (max-width: 1300px) {
+  .col-info {
+    padding: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

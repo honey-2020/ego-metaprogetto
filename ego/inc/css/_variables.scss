@@ -1,0 +1,13 @@
+$purple: #7E61CB;
+$lblue: #5DCAD2;
+
+$w: white;
+$b: black;
+
+@mixin button($bcg-color){
+    padding: 15px 60px;
+    outline: none;
+    background-color: $bcg-color;
+    font-size: 25px;
+    border-radius: 20px;
+}

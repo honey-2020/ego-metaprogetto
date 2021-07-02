@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'reset';
+
+// header
+header{
+    height: 100vh;
+    width: 100%;
+    background-color: $purple;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .col-info{
+        padding: 2.5em;
+        img{
+            width: 300px;
+            padding: 0 0 2em 0;
+        }
+
+        p{
+            font-size: 20px;
+            color: $w;
+            width: 70%;
+            padding: 0 0 4em 0;
+        }
+        button{
+            @include button($w);
+                a{
+                    color: $b;
+                }
+        }
+    }
+    .col-img{
+       
+        img {
+            max-width: 80%;
+        }
+    }
+}
+
+// header mediaquery
+
+@media (max-width:1300px){
+    .col-info{
+        padding: 0!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
