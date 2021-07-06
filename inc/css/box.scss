@@ -1,0 +1,63 @@
+@import 'variables';
+@import 'reset';
+
+.card-applicazione{
+    margin: 50px;
+    .card-contenitore{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $w;
+        img{
+            max-width: 350px;
+            position: relative;
+            left: 40px;
+            z-index: 1;
+        }
+        .card-caratteristiche{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px 60px 30px 60px;
+            border-radius: 15px;
+            background-color: $purple;
+            height: 350px;
+            width: fit-content;
+    
+            h2{
+                font-size: 35px;
+                font-weight: 600;
+                margin-bottom: 1em;
+            }
+    
+            a{
+                color: $w;
+                font-size: 20px;
+                // font-weight: 500;
+                text-align: end;
+            }
+            .card-descrizione{
+                margin-bottom: 1em;
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+
+        img{
+            left: -30px;
+        }
+        .card-caratteristiche{
+            background-color: $blue;
+        }
+    }
+    
+
+}

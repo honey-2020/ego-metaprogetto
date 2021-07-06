@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EGO</title>
 
-
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="inc/fontawesome/css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="inc/css/style.css">
 </head>
@@ -24,21 +25,34 @@
             <img src="inc/img/doppio-mobile.png" alt="ego-applicazione">
         </div>
     </header>
-    <section class="section-container">
-        <div class="section-app">
-            <img class="app-photo" src="inc/img/cell+backgroubd.png" alt="app-ego">
-            <div class="app-container">
-                <h2>Caratteristiche</h2>
-                <div class="app-description">
-                    <p><img src="inc/img/check.png" alt="icon-check">Registrazione tramite i dati personali</p>
-                    <p><img src="inc/img/check.png" alt="icon-check">Creazione del proprio avatar digitale</p>
+
+    <!-- sezione 1 -->
+    <div class="card-applicazione">
+        <div class="card-contenitore">
+            <img src="inc/img/cell+backgroubd.png" alt="ego-applicazione">
+            <div class="card-caratteristiche">
+                <h2>
+                    Caratteristiche
+                </h2>
+    
+                <div class="card-descrizione">
+                    <p>
+                        <i class="fas fa-check-circle"></i>
+                        Registrazione tramite i dati personali
+                    </p>
+    
+                    <p>
+                        <i class="fas fa-check-circle"></i>
+                        Creazione del proprio avatar digitale
+                    </p>
                 </div>
-                <div class="arrow-app">
-                    <a href="index.html#section2">Scopri di più<img src="inc/img/arrow.png" alt="icon-arrow"></a>
-                </div>
+    
+                <a href="index.html#section2">Scopri di più <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
-        </div>
-    </section>
+        </div>   
+    </div>
+
+    <!-- download -->
     <section class="cta-app" id="app">
         <div class="container-cta">
             <h2>Scarica EGO</h2>
@@ -50,17 +64,56 @@
         </div>
         <img class="ego-connections" src="inc/img/ego-connections.png" alt="ego-connections">
     </section>
-    <section class="section-container" id="section2">
-        <div class="section-app-blue">
-            <div class="app-container-blue">
-                <h2>Caratteristiche</h2>
-                <div class="app-description">
-                    <p><img src="inc/img/arrrow-blue.png" alt="icon-check">Accesso univoco a siti e applicazioni</p>
-                    <p><img src="inc/img/arrrow-blue.png" alt="icon-check">Controllo delle credenziali salvate in rete</p>
+
+    <!-- id="section2" -->
+    <div class="card-applicazione" id="section2">
+        <div class="card-contenitore reverse">
+            <img src="inc/img/phone+bck.png" alt="ego-applicazione">
+            <div class="card-caratteristiche">
+                <h2>
+                    Caratteristiche
+                </h2>
+    
+                <div class="card-descrizione">
+                    <p>
+                        <i class="fas fa-check-circle"></i>
+                        Accesso univoco a siti e applicazioni
+                    </p>
+    
+                    <p>
+                        <i class="fas fa-check-circle"></i>
+                        Creazione del proprio avatar digitale
+                    </p>
                 </div>
             </div>
-            <img class="app-photo-blue" src="inc/img/phone+bck.png" alt="app-ego">
         </div>
-    </section>
+        
+    </div>
+
+    <div class="accordion-faq">
+        <button class="accordion">
+            Funzionamento dell’applicazione
+        </button>
+        <div class="panel">
+            <p>Applicativo che consenta la registrazione attraverso dati personali (documenti di identità).   Questo porta alla creazione di un avatar che presenta due vantaggi: accesso ad applicazioni e siti attraverso questa unica registrazione messa in sicurezza dalla presenza dall'identificazione a due fattori registrazione tramite dati personali e quindi controllo delle credenziali (no account fake e accesso ad aree personali).</p>
+        </div>
+
+        <button class="accordion">
+            Gestione accessi multipli
+        </button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+
+        <button class="accordion">
+            Finalità dell’applicazione: dashboard e app mobile
+        </button>
+
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+    </div>
+
+    <script src="inc/js/accordion.js"></script>
 </body>
 </html>
