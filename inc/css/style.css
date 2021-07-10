@@ -150,6 +150,8 @@ header .col-img img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  -webkit-box-shadow: 2px 2px 5px -3px black;
+  box-shadow: 2px 2px 5px -3px black;
 }
 
 .card-applicazione .card-contenitore .card-caratteristiche h2 {
@@ -186,7 +188,7 @@ header .col-img img {
 }
 
 .card-applicazione .reverse .card-caratteristiche {
-  background-color: #5DCAD2;
+  background-color: #7E61CB;
 }
 
 @media (max-width: 860px) {
@@ -351,6 +353,8 @@ header .col-img img {
   text-align: left;
   margin: 0 0 40px 0;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px -3px black;
+  box-shadow: 2px 2px 5px -3px black;
 }
 
 .accordion-faq .active, .accordion-faq .accordion:hover {
