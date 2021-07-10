@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'reset';
-@import 'slider';
+
+@import 'loader';
 
 // header
 header{
@@ -93,7 +94,7 @@ header{
             justify-content: center;
             padding: 30px 60px 30px 60px;
             border-radius: 15px;
-            background-color: $purple;
+            background-color: $blue;
             height: 350px;
             width: fit-content;
             -webkit-box-shadow: 2px 2px 5px -3px $b;
@@ -129,7 +130,7 @@ header{
             left: -30px;
         }
         .card-caratteristiche{
-            background-color: $purple;
+            background-color: $blue;
         }
     }   
 
@@ -159,7 +160,7 @@ header{
 // section - cta app 
 
 .cta-app{
-    background-color: $blue;
+    background-color: $purple;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -192,11 +193,15 @@ header{
         align-items: flex-start;
         flex-wrap: wrap;
         margin-left: -7px;
+        img{
+            max-width: 200px;
+        }
         }
     }
     .ego-connections{
         width: 30%;
         padding: 2em;
+        border-radius: 50%;
     }
 }
 
