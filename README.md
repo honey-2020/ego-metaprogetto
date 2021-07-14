@@ -30,7 +30,6 @@ Nel corso del workshop, come team di grafici e sviluppatori, abbiamo cercato di 
     <a href="https://ego-metaprogetto.netlify.app" target="_blank">Netlify</a>
   </li>
 </ul>
-    👾       👾         👾           👾         👾          👾        👾      👾      👾      👾      👾      👾      👾      👾      👾      👾      👾      👾    👾
-👾      👾       👾           👾          👾          👾         👾       👾      👾      👾      👾      👾      👾      👾      👾      👾      👾      👾      👾
+
 
 
