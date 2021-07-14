@@ -18,23 +18,26 @@
     <link rel="stylesheet" href="inc/css/style.css">
 </head>
 <body>
-       <div id="loader"></div>  
+
+    <!-- loader pagina -->
+    <div id="loader"></div>  
  
-    
+    <!-- header hero -->
     <header>
         <div class="col-info">
             <img src="inc/img/ego_logo.svg" alt="ego-logo">
             <p>Sistema di controllo e gestione unitaria di piattaforme e documenti digitalizzati.</p>
-            <button>
+            <button id="button-ego" type="button">
                 <a href="https://www.figma.com/proto/AAOsbZOZkXdPxhSZdTgUZM/Metaprogetto-identit%C3%A0-digitale-team-library?page-id=474%3A2&node-id=549%3A18&viewport=-133%2C281%2C0.11527551710605621&scaling=scale-down-width" alt="scopri-il-progetto" target="_blank">Scopri il progetto</a>
             </button>
         </div>
         <div class="col-img">
             <img src="inc/img/ego-schermate.png" alt="ego-schermate-applicazione">
         </div>
+        
     </header>
-
-    <!-- sezione 1 -->
+    
+    <!-- sezione descrizione 1 -->
     <div class="card-applicazione">
         <div class="card-contenitore">
             <img src="inc/img/ego-registrazione.png" alt="ego-registrazione">
@@ -60,7 +63,7 @@
         </div>   
     </div>
 
-    <!-- download -->
+    <!-- sezione download-->
     <section class="cta-app" id="app">
         <div class="container-cta">
             <h2>Scarica EGO</h2>
@@ -73,7 +76,7 @@
         <img class="ego-connections" src="inc/img/movimento_app_gif.gif" alt="ego-connections-gif">
     </section>
 
-    <!-- id="section2" -->
+    <!-- sezione descrizione 2 -->
     <div class="card-applicazione" id="section2">
         <div class="card-contenitore reverse">
             <img src="inc/img/ego-linkedin.png" alt="ego-linkedin">
@@ -98,7 +101,51 @@
         
     </div>
 
+    <!-- sezione team -->
+    <div class="easter-eggo">
+        <h2>
+            Ecco a voi l'easter EG(g)O
+        </h2>
+        <div class="team">
+            <div class="team-ego">
+                <img src="#" alt="elisa_pedroni">
+                <h3>Elisa Pedroni</h3>
+                <h5>Graphic Designer</h5>
+            </div>
 
+            <div class="team-ego">
+                <img src="#" alt="giorgia_anghileri">
+                <h3>Giorgia Anghileri</h3>
+                <h5>Graphic Designer</h5>
+            </div>
+
+            <div class="team-ego">
+                <img src="inc/img/sara_fossati.jpg" alt="sara_fossati">
+                <h3>Sara Fossati</h3>
+                <h5>Web Designer</h5>
+            </div>
+
+            <div class="team-ego">
+                <img src="#" alt="sara_pizzigoni">
+                <h3>Sara Pizzigoni</h3>
+                <h5>Graphic Designer</h5>
+            </div>
+
+            <div class="team-ego">
+                <img src="#" alt="yuri_santo">
+                <h3>Yuri Santo</h3>
+                <h5>Graphic Designer</h5>
+            </div>
+
+            <div class="team-ego">
+                <img src="inc/img/lavinia_garau.jpg" alt="lavinia_garau">
+                <h3>Lavinia Garau</h3>
+                <h5>Web Designer&Glitch</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- sezione accordion -->
     <div class="accordion-faq">
         <h2>
             FAQ
@@ -129,21 +176,52 @@
             <p>La finalità primaria dell’applicazione è eseguire un login veloce e sicuro su piattaforme terze che sostengono il sistema di Ego. 
                 Tramite l’avatar digitale verificato è possibile verificare la propria identità limitandone così i furti. Il nostro servizio mette inoltre a disposizione dell’utente una cronologia degli accessi eseguiti tramite applicazione in modo da avere un controllo dei propri movimenti digitali.</p>
         </div>
+
     </div>
 
+    <button class="hacked">
+        <a href="hacked.html">Torna su</a>
+    </button>
 
     <footer>
-        <p>made by Ego ©</p>
-        <p>scuola Mohole, Via Privata Giovanni Ventura, 5, 20134 Milano MI</p>
+        <p>made by Ego © with love</p>
+        <p>Scuola Mohole, Lambrate (MI)</p>
         <div>
             <a href="https://it.wikipedia.org/wiki/Privacy" target="_blank">Privacy policy</a>
             <a href="https://it.wikipedia.org/wiki/Cookie" target="_blank">Cookie policy</a>
         </div>
+
+        <div class="social">
+
+            <a href="https://instagram.com/metaproject_mohole?utm_medium=copy_link" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://github.com/honey-2020/ego-metaprogetto" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://instagram.com/metaproject_mohole?utm_medium=copy_link" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+          
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-1.8.2.js"></script> 
 
+    <!-- link ai vari script -->
+    <script src="https://code.jquery.com/jquery-1.8.2.js"></script> 
     <script src="inc/js/loader.js"></script>  
     <script src="inc/js/accordion.js"></script>
+    <script src="inc/js/text.js"></script>
+
+    <!-- script hacked -->
+    <script>
+        // Script to desable page loader on button click
+        $('#button-ego').click(function () {
+            return false;
+        });
+    </script>
+
 </body>
 </html>

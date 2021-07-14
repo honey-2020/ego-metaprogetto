@@ -6,7 +6,7 @@ $b: black;
 $g: #E7E7E7;
 
 @mixin button($bcg-color){
-    padding: 15px 60px;
+    padding: 15px 25px;
     outline: none;
     background-color: $bcg-color;
     font-size: 25px;

@@ -72,7 +72,7 @@ header .col-info p {
 }
 
 header .col-info button {
-  padding: 15px 60px;
+  padding: 15px 25px;
   outline: none;
   background-color: white;
   font-size: 25px;
@@ -381,7 +381,6 @@ header .col-img img {
 }
 
 .accordion-faq .panel {
-  padding: 0 18px;
   background-color: #E7E7E7;
   overflow: hidden;
   display: none;
@@ -390,6 +389,7 @@ header .col-img img {
   padding: 20px;
   position: relative;
   top: -20px;
+  font-size: 18px;
 }
 
 .accordion-faq .accordion:after {
@@ -418,6 +418,82 @@ header .col-img img {
   }
 }
 
+.easter-eggo h2 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 1em;
+  margin-left: 100px;
+  color: #7E63CE;
+}
+
+.easter-eggo .team {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 4em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 4em;
+  background-color: #7E63CE;
+  padding: 4em 0;
+  color: white;
+  line-height: 1.5em;
+}
+
+.easter-eggo .team h3 {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.easter-eggo .team img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-color: white;
+}
+
+@media (max-width: 800px) {
+  .easter-eggo h2 {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .easter-eggo .team {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .easter-eggo .team {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.hacked {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  padding: 15px;
+  background-color: #5DCAD2;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.hacked a {
+  text-decoration: none;
+  color: white;
+}
+
 footer {
   background-color: #7E63CE;
   color: white;
@@ -441,6 +517,11 @@ footer div a {
 
 footer div a:hover {
   text-decoration: underline;
+}
+
+footer .social a {
+  text-decoration: none !important;
+  font-size: 25px;
 }
 
 @media (max-width: 750px) {

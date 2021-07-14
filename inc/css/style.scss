@@ -1,6 +1,7 @@
+// partials generici
 @import 'variables';
 @import 'reset';
-
+// loader partial
 @import 'loader';
 
 // header
@@ -154,11 +155,7 @@ header{
 
 }
 
-@media (max-width: 500px){
-
-}
 // section - cta app 
-
 .cta-app{
     background-color: $purple;
     display: flex;
@@ -261,7 +258,6 @@ header{
     }
     
     .panel {
-        padding: 0 18px;
         background-color: $g;
         overflow: hidden;
         display: none;
@@ -270,6 +266,7 @@ header{
         padding: 20px;
         position: relative;
         top: -20px;
+        font-size: 18px;
     }
 
     .accordion:after {
@@ -300,6 +297,78 @@ header{
     }
 }
 
+// sezione team
+.easter-eggo{
+    h2{
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 1em;
+        margin-left: 100px;
+        color: $purple;
+    }
+ .team{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 4em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4em;
+    background-color: $purple;
+    padding: 4em 0;
+    color: $w;
+    line-height: 1.5em;
+
+    h3{
+        font-weight: 500;
+        text-decoration: underline;
+    }
+    img{
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 50%;
+        border: 5px solid $w;
+        background-color: $w;
+    }
+
+}   
+}
+
+@media (max-width: 800px){
+    .easter-eggo{
+        h2{
+            margin-left: 0px;
+            text-align: center;
+        }
+        .team{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media (max-width:500px){
+    .easter-eggo{
+        .team{
+            grid-template-columns: 1fr;
+        }
+    }
+}
+// button hacked
+.hacked{
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    padding: 15px;
+    background-color: $blue;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 800;
+    a{
+        text-decoration: none;
+        color: $w;
+    }
+}
+
 // footer
 footer{
     background-color: $purple;
@@ -319,6 +388,13 @@ footer{
         a:hover{
             text-decoration: underline;
         }
+    }
+    .social{
+        a{
+            text-decoration: none !important;
+            font-size: 25px;
+        }
+       
     }
     
 }
