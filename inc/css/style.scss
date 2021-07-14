@@ -27,11 +27,13 @@ header{
             width: 70%;
             padding: 0 0 4em 0;
         }
-        button{
-            @include button($w);
-                a{
-                    color: $b;
-                }
+        a{
+            @include button($b);
+            color: $w;
+        }
+        a:hover{
+            opacity: 0.95;
+            transition: all 0.3s ease;
         }
     }
     .col-img{
@@ -143,14 +145,21 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        width: 80%;
+        margin: 0 auto;
         img{
-            display: none;
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+            left: 0 !important;
+            margin: 4em 0;
         }
     }
     .reverse{
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
 }
@@ -359,7 +368,7 @@ header{
     right: 1em;
     bottom: 1em;
     padding: 15px;
-    background-color: $blue;
+    background-color: $b;
     border-radius: 15px;
     font-size: 20px;
     font-weight: 800;
@@ -367,6 +376,7 @@ header{
         text-decoration: none;
         color: $w;
     }
+    
 }
 
 // footer
