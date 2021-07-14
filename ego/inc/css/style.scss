@@ -1,0 +1,363 @@
+@import 'variables';
+@import 'reset';
+@import 'loader';
+
+// header
+header{
+    height: 100vh;
+    width: 100%;
+    background-color: $purple;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .col-info{
+        padding: 2.5em;
+        img{
+            width: 300px;
+            padding: 0 0 2em 0;
+        }
+
+        p{
+            font-size: 20px;
+            color: $w;
+            width: 70%;
+            padding: 0 0 4em 0;
+        }
+        button{
+            @include button($w);
+                a{
+                    color: $b;
+                }
+        }
+    }
+    .col-img{
+       
+        img {
+            max-width: 80%;
+        }
+    }
+    
+}
+
+// header mediaquery
+
+@media (max-width:1300px){
+    .col-info{
+        padding: 0!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin-top: 2em;
+        }
+        button{
+            margin-bottom: 2em;
+        }
+        p{
+            text-align: center;
+            width: 90%;
+        }
+    }
+    .col-img{
+       
+        img {
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    
+}
+
+// div caratteristiche applicazione
+.card-applicazione{
+    margin: 50px 0;
+    .card-contenitore{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $w;
+        
+        img{
+            max-width: 350px;
+            position: relative;
+            left: 40px;
+            z-index: 1;
+        }
+        .card-caratteristiche{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px 60px 30px 60px;
+            border-radius: 15px;
+            background-color: $blue;
+            height: 350px;
+            width: fit-content;
+            -webkit-box-shadow: 2px 2px 5px -3px $b;
+            box-shadow: 2px 2px 5px -3px $b;
+    
+            h2{
+                font-size: 35px;
+                font-weight: 600;
+                margin-bottom: 1em;
+            }
+    
+            a{
+                color: $w;
+                font-size: 20px;
+                // font-weight: 500;
+                text-align: end;
+            }
+            .card-descrizione{
+                margin-bottom: 1em;
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+
+        img{
+            left: -30px;
+        }
+        .card-caratteristiche{
+            background-color: $blue;
+        }
+    }   
+
+}
+
+@media (max-width:860px){
+    .card-contenitore{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+        img{
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+            left: 0 !important;
+            margin: 4em 0;
+        }
+    }
+    .reverse{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+}
+
+@media (max-width: 500px){
+
+}
+// section - cta app 
+
+.cta-app{
+    background-color: $purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5em 0;
+    .container-cta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-right: 20em;
+        h2{
+            font-size: 40px;
+            color: $w;
+            font-weight: 600;
+            margin-bottom: 1em;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            color: $w;
+            margin-bottom: 3em;
+        }
+        div{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-left: -7px;
+        img{
+            max-width: 200px;
+        }
+        }
+    }
+    .ego-connections{
+        width: 30%;
+        padding: 2em;
+        border-radius: 50%;
+    }
+}
+
+// section - cta app -  mediaquery
+
+@media (max-width:1300px){
+    .cta-app{
+        flex-direction: column;
+        margin-top: 8em;
+        .container-cta{
+            margin-right: 0;
+            h2, p{
+                width: 90%;
+                text-align: center;
+                display: block;
+                margin: 1em auto;
+            }
+            
+        }
+        div{
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+        .ego-connections{
+            width: 100%;
+        }
+    }
+}
+
+
+// faq
+.accordion-faq{
+    margin: 50px 100px 50px 100px;
+    h2{
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom: 1em;
+        color: $purple;
+    }
+    .accordion {
+        font-size: 20px;
+        background-color: $purple;
+        color: $w;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        text-align: left;
+        margin: 0 0 40px 0;
+        border-radius: 10px;
+        -webkit-box-shadow: 2px 2px 5px -3px $b;
+        box-shadow: 2px 2px 5px -3px $b;
+    }
+    
+    .active, .accordion:hover {
+        background-color: $purple;
+    }
+    
+    .panel {
+        padding: 0 18px;
+        background-color: $g;
+        overflow: hidden;
+        display: none;
+        margin: 0 0 20px 0;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        top: -20px;
+    }
+
+    .accordion:after {
+        font-size: 20px;
+        content: '+';
+        font-weight: 500;
+        color: $w;
+        float: right;
+        margin-left: 5px;
+        
+      }
+      
+      .active:after {
+        font-size: 20px;
+        content: "-";
+      }
+}
+
+@media (max-width: 500px){
+    .accordion-faq{
+        margin: 25px 50px 25px 50px; 
+        .accordion{
+            font-size: 18px;
+        }
+        .panel{
+           font-size: 15px; 
+        }
+    }
+}
+
+// button hacked
+.hacked{
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    padding: 10px;
+    background-color: $blue;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 800;
+    a{
+        text-decoration: none;
+        color: $w;
+    }
+}
+
+// footer
+footer{
+    background-color: $purple;
+    color: $w;
+    text-align: center;
+    padding: 40px 0 50px 0px;
+    p{
+        line-height: 1.5em;
+        font-size: 20px;
+    }
+    div{
+        margin-top: 20px;
+        text-align: center;
+        a{
+            color: $w;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+// media query footer
+@media (max-width: 750px){
+    footer{
+        padding: 40px 50px 50px 50px;
+
+        p{
+            font-size: 16px; 
+        }
+        div {
+            a{
+                font-size: 15px;
+            }
+        }
+    }
+}
