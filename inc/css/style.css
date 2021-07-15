@@ -470,8 +470,7 @@ header .col-img img {
   max-width: 200px;
   max-height: 200px;
   border-radius: 50%;
-  border: 5px solid #7E63CE;
-  background-color: white;
+  border: 5px solid white;
 }
 
 @media (max-width: 800px) {
