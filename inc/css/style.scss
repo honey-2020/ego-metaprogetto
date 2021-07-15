@@ -28,7 +28,10 @@ header{
             padding: 0 0 4em 0;
         }
         a{
-            @include button($b);
+            padding: 15px 25px;
+            background-color: $w;
+            font-size: 25px;
+            border-radius: 20px;
             color: $w;
         }
         a:hover{
