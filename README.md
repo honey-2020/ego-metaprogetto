@@ -4,7 +4,7 @@ Metaprogetto identità digitale
 <h3>✨ Sfida: Identità digitale ✨</h3>
 Come definire la nostra presenza online? Strumenti e nuovi metodi per un nuovo approccio al digitale, tra libertà individuale e sicurezza.
 
-<h3> ✨ Soluzione: EGO - make it dital ✨ </h3>
+<h3> ✨ Soluzione: EGO - make it digital ✨ </h3>
 Ego è un’applicazione che consente di creare un <strong>avatar digitale verificato</strong>. É necessario registrarsi attraverso i propri dati sensibili personali per eseguire un login veloce e sicuro su piattaforme terze. Questo sistema consente inoltre di avere una <strong>cronologia degli accessi eseguiti</strong>, in modo da consentire una verifica ed un controllo dei propri movimenti digitali.
 
 <h3> Risorse utilizzate: design e sviluppo </h3>
