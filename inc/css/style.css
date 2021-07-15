@@ -494,6 +494,7 @@ header .col-img img {
 
 .hacked {
   position: fixed;
+  z-index: 200;
   right: 1em;
   bottom: 1em;
   padding: 15px;
