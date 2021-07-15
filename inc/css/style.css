@@ -455,9 +455,9 @@ header .col-img img {
           align-items: center;
   text-align: center;
   margin-bottom: 4em;
-  background-color: #7E63CE;
+  background-color: white;
   padding: 4em 0;
-  color: white;
+  color: #7E63CE;
   line-height: 1.5em;
 }
 
@@ -470,7 +470,7 @@ header .col-img img {
   max-width: 200px;
   max-height: 200px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 5px solid #7E63CE;
   background-color: white;
 }
 

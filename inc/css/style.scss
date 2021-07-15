@@ -327,9 +327,9 @@ header{
     align-items: center;
     text-align: center;
     margin-bottom: 4em;
-    background-color: $purple;
+    background-color: $w;
     padding: 4em 0;
-    color: $w;
+    color: $purple;
     line-height: 1.5em;
 
     h3{
@@ -340,7 +340,7 @@ header{
         max-width: 200px;
         max-height: 200px;
         border-radius: 50%;
-        border: 5px solid $w;
+        border: 5px solid $purple;
         background-color: $w;
     }
 
