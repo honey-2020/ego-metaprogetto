@@ -73,7 +73,7 @@ header .col-info p {
 
 header .col-info a {
   padding: 15px 25px;
-  background-color: white;
+  background-color: black;
   font-size: 25px;
   border-radius: 20px;
   color: white;
@@ -537,6 +537,16 @@ footer div a:hover {
 footer .social a {
   text-decoration: none !important;
   font-size: 25px;
+}
+
+footer .social a:hover {
+  color: black;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+footer .social .ig {
+  padding: 0 20px 0 0;
 }
 
 @media (max-width: 750px) {

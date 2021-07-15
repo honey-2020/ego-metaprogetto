@@ -29,7 +29,7 @@ header{
         }
         a{
             padding: 15px 25px;
-            background-color: $w;
+            background-color: $b;
             font-size: 25px;
             border-radius: 20px;
             color: $w;
@@ -408,7 +408,13 @@ footer{
             text-decoration: none !important;
             font-size: 25px;
         }
-       
+        a:hover{
+           color: $b;
+           transition: all ease 0.5s;
+       }
+       .ig{
+        padding: 0 20px 0 0;
+       }
     }
     
 }
